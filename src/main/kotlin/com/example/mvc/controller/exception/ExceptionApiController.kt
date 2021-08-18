@@ -22,13 +22,14 @@ import javax.validation.constraints.Size
 @Validated
 class ExceptionApiController {
     @GetMapping("/hello")
-    fun hello(){
+    fun hello(): String {
 
         val list = mutableListOf<String>()
         val temp = list[0]
 //        if(true){
 //            throw RuntimeException("강제 exception 발생")
 //        }
+        return "hello"
     }
 
     @GetMapping("")
